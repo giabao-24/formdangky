@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng ký</title>
+  <style>
+    body {
+      background-color: aliceblue;
+      background-position: center ;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    form{
+      height: fit-content;
+      width: fit-content;
+      box-sizing: content-box;
+      padding: auto;
+    }
+    button {
+      color:black;
+      text-align: center;
+      background-color: yellow; 
+    }
+  </style>
+</head>
+<body>
+  <form action="/sumbit" method="post" >
+    <table>
+      <tr>
+        <td><label for="username">Họ tên</label></td>
+        <td><input type="text" id="name" name="username" placeholder="Nhập họ và tên"></td>
+      </tr>
+      <tr>
+        <td><label for="phonenumber">Số điện thoại</label></td>
+        <td> <input type="tel" id="sdt" name="numberphone" placeholder="Nhập số điện thoại"><button type="/sumbit">Gửi mã xác thực</button></td>
+      </tr>
+      <tr>
+        <td><label for="Verification code">Mã xác thực</label></td>
+        <td><input type="number" id="number" name="Verification code" placeholder="Nhập mã xác thực"></td>
+      </tr>
+      <tr>
+        <td><label for="mail">Email</label></td>
+        <td><input type="email" id="email" name="email" placeholder="Nhập Email"></td>
+      </tr>
+      <tr>
+        <td><label for="password">Mật khẩu</label></td>
+        <td><input type="password" id="password" name="password" placeholder="Mật khẩu từ 6 đến 12 kí tự"></td>
+      </tr>
+      <tr>
+        <td><label for="birthday">Ngày sinh</label></td>
+        <td><input type="date" id="date" name="date" placeholder="Ngày"></td>
+      </tr>
+      <tr>
+        <td style="text-align: left;">Giới tính</td>
+        <td>   <label for="nam">Nam</label>  <input type="radio" id="man" name="nam"> 
+               <label for="nữ">Nữ</label> <input type="radio" id="nữ" name="nữ">  </td>
+      </tr>
+      <tr>
+        <td><label for="notification" >Nhận thông báo</label></td>
+        <td> <input type="radio" id="radio" name="radio"></td>
+      </tr> 
+    </table>
+  </form>
+    <form action="/sumbit" method="post">
+      <tr><td>
+    <button type="/sumbit" style="height: 1cm;width: 3.5cm;color: black;border: 1cm;">Tạo tài khoản</button>
+  </td></tr>
+  </form>
+</body>
+</html>
